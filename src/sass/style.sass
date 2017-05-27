@@ -1,0 +1,35 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans)
+
+@import 'font-awesome'
+@import 'bourbon'
+@import 'neat'
+
+body
+	font-family: "Open Sans"
+
+@mixin ui-button($h: 32px, $p: 10px)
+	display: inline-block
+	box-sizing: border-box
+	height: $h
+	line-height: $h - 2*$p
+	padding: $p
+	cursor: pointer
+	font-size: $h / 2 - 2px
+	&:active
+		padding: ($p + 1) $p ($p - 1) $p
+
+input, li
+	display: inline-block
+	width: 100%
+	height: 32px
+	line-height: 32px
+	background: #eee
+	box-shadow: 0 1px 3px #aaa
+	border-radius: 3px
+	margin: 3px 0px
+
+ul
+	margin: 0px
+	padding: 0px
+	list-style: none
+	li
